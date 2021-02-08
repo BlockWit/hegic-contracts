@@ -1,6 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider")
-const infuraKey = process.env.INFURA_KEY
-const pk = [process.env.PK]
+const CONFIG = require('dotenv').config().parsed;
 
 module.exports = {
   networks: {
@@ -18,7 +17,7 @@ module.exports = {
     },
     rinkeby: {
       provider: () =>
-        new HDWalletProvider(pk, `https://rinkeby.infura.io/v3/${infuraKey}`),
+        new HDWalletProvider(CONFIG.PRIVATE_KEYS, `https://rinkeby.infura.io/v3/${CONFIG.INFURA_KEY}`),
       network_id: 4, // Ropsten's id
       // gas: 7000000,        // Ropsten has a lower block limit than mainnet
       // confirmations: 1,    // # of confs to wait between deployments. (default: 0)
@@ -27,7 +26,7 @@ module.exports = {
     },
     ropsten: {
       provider: () =>
-        new HDWalletProvider(pk, `https://ropsten.infura.io/v3/${infuraKey}`),
+        new HDWalletProvider(CONFIG.PRIVATE_KEYS, `https://ropsten.infura.io/v3/${CONFIG.INFURA_KEY}`),
       network_id: 3, // Ropsten's id
       // gas: 7000000,        // Ropsten has a lower block limit than mainnet
       // confirmations: 1,    // # of confs to wait between deployments. (default: 0)
@@ -36,7 +35,7 @@ module.exports = {
     },
     main: {
       provider: () =>
-        new HDWalletProvider(pk, `https://mainnet.infura.io/v3/${infuraKey}`),
+        new HDWalletProvider(CONFIG.PRIVATE_KEYS, `https://mainnet.infura.io/v3/${CONFIG.INFURA_KEY}`),
       network_id: 1, // Ropsten's id
       gasPrice: 33000000000,
       // gas: 7000000,        // Ropsten has a lower block limit than mainnet
