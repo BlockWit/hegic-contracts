@@ -1,0 +1,82 @@
+# Developer's guide
+## Insallation
+1. clone project
+2. Make sure you are using Node v10. Otherwise, the installation of the project may fail.
+Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same time.
+3. run `npm install`.
+
+## Environments
+### Ropsten
+#### FakeUSD
+```
+> transaction hash:    0x215a08943a488ae0f9b30c7796c0aa5df1e4efb6e686bab8126e085969d0ee60
+> Blocks: 1            Seconds: 33
+> contract address:    0x810135aB23E6FC4496d2D333a7FefcD03d0D8740
+> block number:        9622850
+> block timestamp:     1612779710
+> account:             0xf62158b03Edbdb92a12c64E4D8873195AC71aF6A
+> balance:             2.625738040630046407
+> gas used:            761745 (0xb9f91)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.0152349 ETH
+```
+#### FakePriceProvider
+```
+> transaction hash:    0xfba602841eaa090efec3b54ed93f5c6ad558606d8d074ea21e6f950109abd7fb
+> Blocks: 0            Seconds: 5
+> contract address:    0x2b1431a3C45a47a8D3574D7ec04D8Ee8D4853970
+> block number:        9622852
+> block timestamp:     1612779725
+> account:             0xf62158b03Edbdb92a12c64E4D8873195AC71aF6A
+> balance:             2.623414940630046407
+> gas used:            116155 (0x1c5bb)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.0023231 ETH
+```
+
+#### FakeExchange
+```
+> transaction hash:    0xf05456c120d57f4795d130a8ed17516125af71f32163aa1a7de5b454ed9e95b5
+> Blocks: 0            Seconds: 8
+> contract address:    0xEbe3E31D46ffA35Bc403e10bd525Ce8b3C14A00E
+> block number:        9622853
+> block timestamp:     1612779734
+> account:             0xf62158b03Edbdb92a12c64E4D8873195AC71aF6A
+> balance:             2.614631260630046407
+> gas used:            439184 (0x6b390)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.00878368 ETH
+```
+
+#### HegicPutOptions
+```
+> transaction hash:    0x49c04b166c1b005fa059c81ce6dc399fd86cb4cfc49d4c8481407f224a0d3ccb
+> Blocks: 1            Seconds: 32
+> contract address:    0x4046731B841bd949955c845333698ac8bA777567
+> block number:        9622856
+> block timestamp:     1612779759
+> account:             0xf62158b03Edbdb92a12c64E4D8873195AC71aF6A
+> balance:             2.536562260630046407
+> gas used:            3903450 (0x3b8fda)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.078069 ETH
+```
+
+#### HegicCallOptions
+```
+> transaction hash:    0x417ad88a8825d566ff25c773c29343b4d0e50c85ac179d6c4b21ab1844f1d9b4
+> Blocks: 0            Seconds: 8
+> contract address:    0x2eA0aC3bE2C8248E0e608f0dDA5268dD39f1FBD2
+> block number:        9622857
+> block timestamp:     1612779788
+> account:             0xf62158b03Edbdb92a12c64E4D8873195AC71aF6A
+> balance:             2.469236480630046407
+> gas used:            3366289 (0x335d91)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.06732578 ETH
+```
