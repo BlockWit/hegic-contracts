@@ -1,5 +1,5 @@
 # Developer's guide
-## Insallation
+## Installation
 1. clone project
 2. Make sure you are using Node v10. Otherwise, the installation of the project may fail.
 Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same time.
@@ -7,7 +7,13 @@ Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same 
 
 ## Environments
 ### Ropsten
-#### FakeUSD
+* [HegicCallOptions](https://ropsten.etherscan.io/address/0x2eA0aC3bE2C8248E0e608f0dDA5268dD39f1FBD2#code)
+* [HegicPutOptions](https://ropsten.etherscan.io/address/0x4046731B841bd949955c845333698ac8bA777567#code)
+* [FakeExchange](https://ropsten.etherscan.io/address/0xEbe3E31D46ffA35Bc403e10bd525Ce8b3C14A00E#code)
+* [FakePriceProvider](https://ropsten.etherscan.io/address/0x2b1431a3C45a47a8D3574D7ec04D8Ee8D4853970#code)
+* [FakeUSD](https://ropsten.etherscan.io/address/0x810135aB23E6FC4496d2D333a7FefcD03d0D8740#code)
+
+##### FakeUSD
 ```
 > transaction hash:    0x215a08943a488ae0f9b30c7796c0aa5df1e4efb6e686bab8126e085969d0ee60
 > Blocks: 1            Seconds: 33
@@ -21,7 +27,7 @@ Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same 
 > value sent:          0 ETH
 > total cost:          0.0152349 ETH
 ```
-#### FakePriceProvider
+##### FakePriceProvider
 ```
 > transaction hash:    0xfba602841eaa090efec3b54ed93f5c6ad558606d8d074ea21e6f950109abd7fb
 > Blocks: 0            Seconds: 5
@@ -36,7 +42,7 @@ Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same 
 > total cost:          0.0023231 ETH
 ```
 
-#### FakeExchange
+##### FakeExchange
 ```
 > transaction hash:    0xf05456c120d57f4795d130a8ed17516125af71f32163aa1a7de5b454ed9e95b5
 > Blocks: 0            Seconds: 8
@@ -51,7 +57,7 @@ Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same 
 > total cost:          0.00878368 ETH
 ```
 
-#### HegicPutOptions
+##### HegicPutOptions
 ```
 > transaction hash:    0x49c04b166c1b005fa059c81ce6dc399fd86cb4cfc49d4c8481407f224a0d3ccb
 > Blocks: 1            Seconds: 32
@@ -66,7 +72,7 @@ Use [nvm](http://nvm.sh) if you want to have multiple Node versions at the same 
 > total cost:          0.078069 ETH
 ```
 
-#### HegicCallOptions
+##### HegicCallOptions
 ```
 > transaction hash:    0x417ad88a8825d566ff25c773c29343b4d0e50c85ac179d6c4b21ab1844f1d9b4
 > Blocks: 0            Seconds: 8
